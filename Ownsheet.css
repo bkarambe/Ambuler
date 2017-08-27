@@ -1,0 +1,100 @@
+body{
+	font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+	background-color: #fafafa;
+}
+.backmain {
+	/*border: 1px solid black;*/
+	position: absolute;
+	width: 480px;
+	height: 380px;
+	margin-top: 120px;
+	margin-left: 430px;
+	background-image: url('imag1.jpg');
+	box-shadow: 0px 0px 2px #9D8D70;
+	border-radius: 5px;
+}
+.main, .NewForm{
+	position: absolute;
+	border: 1px solid #9D8D70;
+	margin-top: 40px;
+	margin-left: 44px;
+	height: 300px;
+	width: 400px;
+	border-radius: 5px;
+	background-color: #9D8D70/*#BDD2CE*/;
+    box-shadow: 0px 0px 2px #9D8D70;
+
+}
+.main .mobnum{
+	/*border: 1px solid black;*/
+	margin-top: 68px;
+	width:285px;
+	margin-left: 55px;
+	padding: 5px;
+	}
+.main .pass{
+	/*border: 1px solid black;*/
+	width: 290px;
+	margin-left: 97px;
+	width: 243px;
+	padding: 5px;
+	margin-top: -10px;
+}
+.main .login{
+	/*border: 1px solid black;*/
+	width: 50px;
+	margin-left: 100px;
+	border-radius: 4px;
+}
+.main .account{
+	/*border: 1px solid black;*/
+	width: 150px;
+	margin-left: 210px;
+	margin-top: -27px;
+	border-radius: 4px;
+}
+button[type=Submit]#bt, #bt2, #rst, #Submit {
+	border : 1px solid #AA2200;
+	border-radius: 4px;
+	padding: 5px;
+	background-color: #AA2200;
+	color: #e2e2e2;
+	box-shadow: 0px 0px 1px #AA2200;
+}
+input[type=text]#mb, #fn, #mn, #ln {
+	box-sizing: border-box;
+	border-radius: 4px;
+	box-shadow: 0.5px 0.5px 0.5px #e2e2e2;
+}
+input[type=password]#ps, #cps {
+	box-sizing: border-box;
+	border-radius: 4px;
+	box-shadow: 0.5px 0.5px 0.5px #e2e2e2;
+}
+.main .mobnum .tooltip{
+	visibility: hidden;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	width: 150px;
+	border-radius: 4px;
+	position: absolute;
+	bottom: 76%;
+	left: 40%;
+	padding: 5px
+}
+.mobnum:hover .tooltip{
+	visibility: visible;
+}
+table{
+	margin-top: 30px;
+}
+td.row1{
+	padding: 4px;
+	text-align: right;
+}
+td.row2{
+	padding-top: 10px;
+	padding-bottom: 1px;
+	text-align: center;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="Ownsheet.css">
+  <style type="text/css">
+  
+  input[type=Submit]
+  {
+    visibility: hidden;
+  }
+
+  #reg
+  {
+
+  }
+
+</style>
+<script type="text/javascript">
+  function call() {
+    // body...
+    if(document.getElementById('ps').value == document.getElementById('cps').value)
+    {
+      document.getElementById('Submit').disabled = false;
+    }
+    else
+    {
+      alert('wrong');
+    }
+  }
+
+function call1() {
+  // body...
+  document.getElementById('Submit').disabled = true;
+}
+
+</script>
+</head>
+<body onload="call1()">
+<div class="backmain">
+  <div class="NewForm">
+   <form method="POST" action="register_amb.php">
+      <table align="center">
+        <tr>
+           <td class="row1">First Name:</td>
+           <td class="row1"><input type="text" name="fn" id="fn"></td>
+        </tr>
+        <tr>
+           <td class="row1">Middle Name:</td>
+           <td class="row1"><input type="text" name="mn" id="mn"></td>
+        </tr>
+        <tr>
+           <td class="row1">Last Name:</td>
+           <td class="row1"><input type="text" name="ln" id="ln"></td>
+        </tr>
+        <tr>
+           <td class="row1">Mobile Number:</td>
+           <td class="row1"><input type="text" name="mb" id="mb"></td>
+        </tr>
+        <tr>
+           <td class="row1">Set Password:</td>
+           <td class="row1"><input type="Password" name="ps" id="ps"></td>
+        </tr>
+        <tr>
+           <td class="row1">Confirm Password:</td>
+           <td class="row1"><input type="Password" name="cps" id="cps" onblur="call()"></td>
+        </tr>
+        <tr>
+        	<td class="row2"><button type="Reset" id="rst">Reset</button></td>
+        	<td class="row2"><a href="google_maps.html"> <button type="Submit" name="register_btn" id="Submit">Submit</button> </a></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+  </div>
+</body>
+</html>
